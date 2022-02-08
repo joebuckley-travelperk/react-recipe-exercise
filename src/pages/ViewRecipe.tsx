@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import axios from 'axios'
 
 import Recipe from './../components/Recipe'
 import { IRecipe } from './../types/types'
@@ -15,7 +14,7 @@ const linkStyle = {
 };
 
 function ViewRecipe() {
-    const [recipes, setRecipes] = useState([]);
+    const [recipes, setRecipes] = useState<IRecipe[]>([]);
     const [search, setSearch] = useState('');
     useEffect(()=>{
         handleRecipes();

@@ -1,5 +1,5 @@
 import React from 'react';
-import {render, fireEvent, waitFor, screen, waitForElementToBeRemoved, cleanup, act} from '@testing-library/react'
+import {render, fireEvent, waitFor, screen, cleanup, act} from '@testing-library/react'
 
 
 import { RecipeService } from '../services/RecipeService';
@@ -67,7 +67,7 @@ it('renders correctly', async () => {
     .toJSON();
     await waitFor(() => expect(RecipeService.getList).toHaveBeenCalledTimes(1));
   })
-  
+
   expect(tree).toMatchSnapshot();
 });
 
