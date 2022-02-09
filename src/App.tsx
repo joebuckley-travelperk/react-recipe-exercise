@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
 import { Routes, Route } from "react-router-dom";
 
-import './App.css';
-import Navbar from './components/NavBar';
-import AddRecipe from './pages/AddRecipe';
-import ViewRecipe from './pages/ViewRecipe';
-import DetailsPage from './pages/DetailPage';
+import "./App.css";
+import Navbar from "./components/NavBar";
+import AddRecipe from "./pages/AddRecipe";
+import ViewRecipe from "./pages/ViewRecipe";
+import DetailsPage from "./pages/DetailPage";
 
 function App() {
   return (
@@ -22,4 +22,3 @@ function App() {
 }
 
 export default App;
- 
